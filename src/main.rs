@@ -13,5 +13,9 @@ fn main() {
     stdin.read_line(&mut input).unwrap();
 
     println!("{}: command not found", input.trim());
+
+    if input == "exit 0" {
+        break;
+    }
    }
 }
