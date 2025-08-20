@@ -11,7 +11,9 @@ fn main() {
     let stdin = io::stdin();
     let mut input = String::new(); 
     stdin.read_line(&mut input).unwrap();
-    if input == "exit 0\n" {
+
+    let line = input.trim_end();
+    if line == "exit 0" {
         break;
     }
 
